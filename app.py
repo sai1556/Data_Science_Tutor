@@ -19,14 +19,16 @@ def get_gemini_response(prompt):
         return f"Error: {str(e)}"
 
 # Streamlit UI
-st.title("AI-Powered Data Science Tutor 🤖")
+st.title("AI-Powered Data Science Tutor 📊")
 
 # User input
 user_input = st.text_area("Ask me any Data Science-related question, and I'll provide Python implementations where applicable!", "")
 
 if st.button("Submit") and user_input:
-    with st.spinner("Thinking... 🤔"):
+    with st.spinner("stay tuned..."):
         response = get_gemini_response(user_input)
     st.success("Response Generated Successfully!")
     st.subheader("AI's Response:")
     st.write(response)
+if __name__ == "__main__":
+    st.run()
