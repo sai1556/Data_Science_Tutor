@@ -30,5 +30,3 @@ if st.button("Submit") and user_input:
     st.success("Response Generated Successfully!")
     st.subheader("AI's Response:")
     st.write(response)
-if __name__ == "__main__":
-    st.run()
